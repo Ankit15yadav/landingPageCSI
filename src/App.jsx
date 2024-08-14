@@ -1,12 +1,27 @@
-import "./App.css";
+import React from "react";
+import Navbar from "./components/common/Navbar";
+import { BsSoundwave } from "react-icons/bs";
+import Cardpages from "./pages/cardpages";
+import { ThreeDCardDemo } from "./utils/test";
+import CustomCursor from "./components/common/CustomCursor";
+import ParaPages from "./pages/ParaPages";
+import Footer from "./components/common/Footer";
+// import { AnimatedTooltipP } from "./components/common/PopName";
+import { AnimatedTooltipPreview } from "./utils/Popname";
+
 
 function App() {
   return (
-    <main className="flex justify-center gap-4 flex-col min-h-screen">
-      <h1 className="text-3xl text-center font-bold underline">React & Tailwind CSS Starter Pack</h1>
-      <p className="text-center text-xl">This is a starter pack for React & Tailwind CSS projects.</p>
-      <img src="https://bit.ly/3wsmzTy" alt="meme" className="mx-auto" />
-    </main>
+    <div className=" w-screen  flex flex-col gap-x-2 min-h-screen text-white  bg-regalBlue-900 cursor-none">
+      <CustomCursor />
+      <Navbar />
+      <ThreeDCardDemo />
+      <Cardpages />
+      <ParaPages />
+      <AnimatedTooltipPreview />
+      <Footer />
+
+    </div>
   );
 }
 

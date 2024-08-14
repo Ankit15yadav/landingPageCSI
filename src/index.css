@@ -1,3 +1,18 @@
+/* src/index.css or another CSS file */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animate-slide {
+    animation: slide 2s forwards;
+}
